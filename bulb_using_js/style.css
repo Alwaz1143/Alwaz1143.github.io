@@ -1,0 +1,19 @@
+.system{
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 20px);
+}
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+.bijli-section{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+}
