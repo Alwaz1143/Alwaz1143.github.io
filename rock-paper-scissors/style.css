@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    height: 100vh;
+}
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+     
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.choice:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    background-color: #081b31;
+}
+/* .choice:active {
+    opacity: 1;
+} */
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    display: inline;
+    font-size: 2rem;
+    background-color: #081b31;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+#reset{
+    object-fit: contain;
+    height: 5rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 0.5rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+        margin-bottom: 0rem; /* Adds space between choices on smaller screens */
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    .msg-container{
+        margin-bottom: 1rem;
+
+    }
+
+    #reset {
+        height: 3rem;
+        bottom: 3rem;
+    }
+}
