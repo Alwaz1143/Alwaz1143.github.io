@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the ultimate beauty care with BEAUTY & Co, offering specials, packages, and online booking.">
+    <title>ZBP Home Page</title>
+    <link rel="stylesheet" href="imports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="header-container">
+            <a href="#" class="header-main-title">Zaynah Salon <span>&</span> Academy</a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#specials">SPECIALS</a></li>
+                    <li><a href="#packages">PACKAGES</a></li>
+                    <li><a href="#appointments" id="book-appointment-nav">BOOK APPOINTMENT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars "></i>
+            </div>
+
+        </nav>
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="#specials">SPECIALS</a></li>
+                <li><a href="#packages">PACKAGES</a></li>
+                <li><a href="#appointments" id="book-appointment-nav">BOOK APPOINTMENT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+            <div class="dropdown-socials">
+                <a href="https://wa.me/9827177307" target="_blank"><i class="fa-brands fa-whatsapp whatsapp-icon" ></i></a>
+                <!-- <i class="fa-brands fa-instagram insta-icon"><a href=""></a></i>
+                <i class="fa-brands fa-facebook facebook-icon"></i> -->
+                <a href="https://www.instagram.com/zaynah_makeover?igsh=MWR3b2duaGN3c2w2YQ==" target="_blank"><i class="fa-brands fa-instagram insta-icon" ></i></a>
+                <a href="https://www.facebook.com/people/Jabeen-Hussain/pfbid08XZ2gByEkZPiF4Goqb4WMG414PjZ8qo5bEuy7uPNBre465ErPz6j4rS27Y4nAj1Jl/?ref=xav_ig_profile_web" target="_blank"><i class="fa-brands fa-facebook facebook-icon" ></i></a>
+            </div>                
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="welcome-content">
+                <h2>Welcome</h2>
+                <p>To a Full Beauty & Co Experience</p>
+                <button id="book-appointment" >BOOK APPOINTMENT</button>
+            </div>
+        </section>
+        <div class="socials">
+            <a href="https://wa.me/9827177307" target="_blank"><i class="fa-brands fa-whatsapp whatsapp-icon" ></i></a>
+            <a href="https://www.instagram.com/zaynah_makeover?igsh=MWR3b2duaGN3c2w2YQ==" target="_blank"><i class="fa-brands fa-instagram insta-icon" ></i></a>
+            <a href="https://www.facebook.com/people/Jabeen-Hussain/pfbid08XZ2gByEkZPiF4Goqb4WMG414PjZ8qo5bEuy7uPNBre465ErPz6j4rS27Y4nAj1Jl/?ref=xav_ig_profile_web" target="_blank"><i class="fa-brands fa-facebook facebook-icon" ></i></a>
+            <!-- <i class="fa-brands fa-instagram insta-icon"></i>
+            <i class="fa-brands fa-facebook facebook-icon"></i> -->
+        </div>
+        <button class="contact-now" onclick="window.location.href='tel:+919827177307'"><i class="fa-solid fa-phone"></i>Contact Now!</button>
+
+
+
+        
+        <!-- Services Section  -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <h3>Facials</h3>
+                    <p>Relaxing facial treatments for glowing skin.</p>
+                </div>
+                <div class="service">
+                    <h3>Makeup</h3>
+                    <p>Professional makeup services for all occasions.</p>
+                </div>
+                <div class="service">
+                    <h3>Hair Styling</h3>
+                    <p>Trendy hairstyles by our expert stylists.</p>
+                </div>
+                <div class="service">
+                    <h3>Hair Styling</h3>
+                    <p>Trendy hairstyles by our expert stylists.</p>
+                </div>
+                <div class="service">
+                    <h3>Hair Styling</h3>
+                    <p>Trendy hairstyles by our expert stylists.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+
+
+        <!-- Appointment Section -->
+         
+        <section id="appointments">
+            <h2>Book an Appointment</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"required>
+                <label for="number">Mobile Number</label>
+                <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+                <label for="service">Service</label>
+                <select name="service" id="service" >
+                    <option value="" disabled selected>Choose a service</option>
+                    <option value="Facial">Facial</option>
+                    <option value="Spa">Spa</option>
+                    <option value="Hair Cutting">Hair Cutting</option>
+                </select>
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <select name="branches" id="change-branch" >
+                <option value="branch1" selected>Torwa Branch (Main)</option>
+                <option value="branch2">Nayapara Branch New</option>
+            </select>
+            <p id="branch-address">Ground C.G, Sai Parisar Complex, J.J. Hospital, Torwa, Bilaspur, Chhattisgarh 495004</p>
+            <p>Email: jabeen.hussain114@gmail.com</p>
+            <p>Phone: +91-9827177307</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.524148696579!2d82.18204547566951!3d22.067791079854473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280ac4f386f3af%3A0xc230665de1ce6a85!2sZaynah%20Beauty%20Parlour%20%26%20Boutique!5e0!3m2!1sen!2sin!4v1734070473258!5m2!1sen!2sin" id="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Zaynah Salon and Academy All Rights Reserved.</p>
+    </footer>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* header section  */
+header{
+    width: 100%;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 9vh;
+    width: 100%;
+    padding: 0 2vw;
+    /* border: 2px solid; */
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.5);
+
+
+}
+.header-main-title{
+    font-size: 3.0rem;
+    font-family: "Libre Baskerville", serif;
+    padding: 1rem;
+    margin-right: 30rem;
+}
+.header-main-title span{
+    font-size: 2.0rem;
+}
+.header-nav{
+    width: 40%;
+    margin: 1rem;
+
+}
+.toggle-btn{
+    /* display: none; */
+    visibility: hidden;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Brandon Grot W01 Light";
+    font-size: 1.4rem;
+
+}
+
+.toggle-btn i{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+    height: 20rem;
+}
+
+.dropdown-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.7rem;
+    height: 100%;
+    line-height: 2rem;
+}
+
+.dropdown-socials{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+
+}
+
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 400;
+    margin-right: 10vw;
+}
+
+.welcome-content h2{
+    font-family: "Belinda W00 Regular";
+    font-size: 10rem;
+    color: white;
+    font-weight: 400;
+}
+
+.welcome-content button{
+    background-color: #a67c00;
+    border: none;
+    outline: none;
+    height: 4rem;
+    width: 50%;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.welcome-content button:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+.home, #appointments {
+    background-size: cover; /* Cover the entire section */
+    background-attachment: fixed; /* Fix background relative to the viewport */
+    background-position: center; /* Center the background image */
+}
+.home{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('pexels-samarth-1193942.jpg') no-repeat center/cover ;
+    background-attachment: fixed;
+}
+#book-appointment-nav{
+    color:#866400;
+    font-weight: bold;
+    text-decoration: underline #866400;
+}
+#book-appointment:hover{
+    color: white;
+}

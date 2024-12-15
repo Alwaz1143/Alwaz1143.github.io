@@ -1,0 +1,45 @@
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    line-height: 3rem;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    margin: 5px 0;
+    
+}
+#contact iframe{
+    margin-top: 2rem;
+    height: 40vh;
+    width: 50vw;
+}
+
+/* Footer */
+footer {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-align: center;
+    background: #111;
+    color: #fff;
+}
+#change-branch{
+    background-color:#F5F5DC;
+    border: none;
+    outline: none;
+    height: 4rem;
+    width: 20vw;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+#change-branch:hover{
+    cursor:pointer;
+}
