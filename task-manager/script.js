@@ -1,8 +1,11 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(() => console.log('Service Worker registered!'))
-      .catch((error) => console.error('Service Worker registration failed:', error));
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./service-worker.js') // Correct path
+        .then(() => console.log('Service Worker Registered'))
+        .catch((err) => console.error('Service Worker registration failed:', err));
+    });
   }
+  
   
 document.addEventListener('DOMContentLoaded', ()=>{
     loadTasks();
