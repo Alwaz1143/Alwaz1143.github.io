@@ -40,7 +40,9 @@ main li{
   border-radius: 1.5rem;
   padding: 1rem;
 }
-
+main ul{
+  overflow-y: scroll;
+}
 main li:hover{
   background-color:rgb(4, 75, 83);
 
