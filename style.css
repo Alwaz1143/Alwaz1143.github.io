@@ -36,14 +36,27 @@ main{
   gap: 1.5rem;
   font-size: 5rem;
 }
-main li{
+.projects-list li{
   border-radius: 1.5rem;
   padding: 1rem;
 }
-main ul{
+.projects-list{
   overflow-y: scroll;
 }
-main li:hover{
+
+.projects-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projects-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.projects-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.projects-list li:hover{
   background-color:rgb(4, 75, 83);
 
 }
