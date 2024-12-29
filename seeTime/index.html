@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="time-box">
+            <div class="zone-div"></div>
+            <div class="time"></div>
+            <div class="date"></div>
+        </div>
+        <!-- <i data-micromodal-trigger="modal-1" id="showDialogue" class="fa-solid fa-pen-to-square"></i> -->
+        <i data-custom-open="modal-1" id="showDialogue" class="fa-solid fa-pen-to-square"></i>
+        
+        <div class="dark-mode-toggle">
+            <i id="toggle-dark-mode" class="toggle-icon">🌙</i>
+        </div>
+        
+        <div id="modal-1"  class="modal">
+            <div tabindex="-1"  class="modal__overlay">
+                <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
+                    <header>
+                        <h2 id="modal-1-title">
+                          Change Location
+                        </h2>
+                
+                        <!-- <i class="fa-solid fa-circle-xmark" aria-label="Close modal" data-micromodal-close></i> -->
+                        <i class="fa-solid fa-circle-xmark" aria-label="Close modal" data-custom-close></i>
+                    </header>
+                    <div class="select-apply">
+                        <select name="location" id="modal-1-content" class="select-location">
+                            <option value="">Select Time Zone</option>
+                        </select>
+                        <button id="apply-button">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
