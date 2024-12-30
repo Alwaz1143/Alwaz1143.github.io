@@ -229,7 +229,7 @@ body.dark-mode #apply-button:hover {
 
   }
   .select-apply select{
-    width: 50%;
+    width: 100%;
     margin-bottom: 2vh;
     height: 15vh;
   }
