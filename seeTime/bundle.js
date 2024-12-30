@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // -----
 });
 
-const zoneList = "http://api.timezonedb.com/v2.1/list-time-zone?key=TZ9RFCWLOEAN&format=json";
+const zoneList = "https://api.timezonedb.com/v2.1/list-time-zone?key=TZ9RFCWLOEAN&format=json";
 // const timeBox = document.querySelector('.time-box');
 const zoneDiv = document.querySelector('.zone-div');
 const time = document.querySelector('.time');
@@ -75,7 +75,7 @@ async function fetchTimeZones(){
 
 async function setTime(zone) {
   try {
-    const timeResponse = await fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=TZ9RFCWLOEAN&format=json&by=zone&zone=${zone}`);
+    const timeResponse = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=TZ9RFCWLOEAN&format=json&by=zone&zone=${zone}`);
     const timeData = await timeResponse.json();
     // console.log(timeData.formatted);
     zoneDiv.innerText = zone;
