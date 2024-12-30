@@ -53,9 +53,23 @@ async function fetchTimeZones(){
     const response = await fetch(zoneList);
     const data = await response.json();
     if (data.status === 'OK'){
+      data.zones.sort((a, b) => a.countryName.localeCompare(b.countryName));
+
       data.zones.forEach(zone => {
         // let optionName = `${zone.countryName}, ${zone.zoneName} (${zone.countryCode})`;
-        let optionName = `${zone.zoneName} (${zone.countryCode})`;
+        const totalZone = zone.zoneName.split('/');
+        var cityName = totalZone[1];
+        if (totalZone.length === 3){
+          cityName = totalZone[1] + " " +totalZone[2];
+        }
+
+                // Format GMT offset
+                const gmtOffsetHours = Math.floor(Math.abs(zone.gmtOffset) / 3600);
+                const gmtOffsetMinutes = Math.abs(zone.gmtOffset) % 3600 / 60;
+                const gmtSign = zone.gmtOffset >= 0 ? "+" : "-";
+                const gmtFormatted = `GMT${gmtSign} ${gmtOffsetHours.toString().padStart(2, '0')}:${gmtOffsetMinutes.toString().padStart(2, '0')}`;
+
+        let optionName = `${zone.countryName} ${cityName} (${zone.countryCode}) ${gmtFormatted}`;
         let option = document.createElement('option');
         option.value = zone.zoneName;
         option.textContent = optionName;

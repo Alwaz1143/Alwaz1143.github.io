@@ -33,16 +33,7 @@ button{
 .container:hover{
   scale: 1.05;
 }
-@keyframes slideUp{
-  from{
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 .container i{
   font-size: 2rem;
   cursor: pointer;
@@ -78,9 +69,6 @@ button{
   width: 50vw;
   background-color: #443548;
   display: none;
-  transform: translate(-50%, -50%) ;
-  top: 50%;
-  left: 50%;
 }
 .modal header{
   display: flex;
@@ -90,6 +78,8 @@ button{
 }
 .modal.is-open {
   display: block;
+  animation: slideUp 0.5s ease-out forwards;
+
 }
 .modal.is-close {
   display: none;
@@ -128,6 +118,19 @@ button{
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+@keyframes slideUp{
+  from{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .select-apply{
   display: flex;
   width: 90%;
