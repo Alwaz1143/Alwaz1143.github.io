@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(() => console.log('Service Worker registered!'))
+      .catch((error) => console.error('Service Worker registration failed:', error));
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
     var today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
     document.getElementById('date').setAttribute('min', today); // Set the min attribute to today's date
