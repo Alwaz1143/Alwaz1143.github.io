@@ -1,0 +1,15 @@
+.quotes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote i{
+    padding: 2rem;
+    font-size: 2rem;
+}
