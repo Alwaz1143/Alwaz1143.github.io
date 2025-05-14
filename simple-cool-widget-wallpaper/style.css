@@ -2,6 +2,7 @@
 @import url('clockStyle.css');
 @import url('calenderStyle.css');
 @import url('quoteStyle.css');
+@import url('weatherStyle.css');
 *{
     margin: 0;
     padding: 0;
@@ -24,3 +25,11 @@ body {
     overflow: hidden;
 }
 
+.right-panel{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

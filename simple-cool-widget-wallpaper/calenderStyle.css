@@ -1,7 +1,4 @@
 .calender{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
     width: 380px;
     height:auto;
     display: flex;
