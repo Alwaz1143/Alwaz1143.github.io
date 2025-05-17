@@ -43,8 +43,7 @@
       </div>
 
       <div class="right-panel">
-
-        <div class="calender">
+        <div class="calendar">
           <div class="header">
             <button id="prevBtn">
               <i class="fa-solid fa-chevron-left"></i>
@@ -70,16 +69,37 @@
         </div>
 
         <div class="weather-container">
-          <img src="" alt="Weather Icon" id="weather-icon">
+          <img src="" alt="Weather Icon" id="weather-icon" />
           <div id="temp-div"></div>
           <div id="weather-info"></div>
           <div id="hourly-forecast"></div>
         </div>
       </div>
+
+      <div class="settings">
+        <i class="fa-solid fa-gear"></i>
+        <div class="settings-popup hidden">
+          <div class="popup-item">
+            <span>Calendar</span>
+            <label class="switch">
+              <input type="checkbox" aria-label="Toggle Calendar">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="popup-item">
+            <span>Weather</span>
+            <label class="switch">
+              <input type="checkbox" aria-label="Toggle Weather">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="settings.js"></script>
     <script src="quotesLogic.js"></script>
     <script src="clockLogic.js"></script>
-    <script src="calenderLogic.js"></script>
+    <script src="calendarLogic.js"></script>
     <script src="weatherLogic.js"></script>
   </body>
 </html>
