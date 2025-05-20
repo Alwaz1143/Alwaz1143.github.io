@@ -16,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="settings.css" />
   </head>
   <body>
     <main class="main">
@@ -77,19 +78,26 @@
       </div>
 
       <div class="settings">
-        <i class="fa-solid fa-gear"></i>
+        <i class="fa-solid fa-gear gear-icon"></i>
         <div class="settings-popup">
+          <div class="popup-item">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" checked aria-label="Toggle Dark Mode" />
+              <span class="slider round"></span>
+            </label>
+          </div>
           <div class="popup-item">
             <span>Calendar</span>
             <label class="switch">
-              <input type="checkbox" aria-label="Toggle Calendar">
+              <input type="checkbox" aria-label="Toggle Calendar" />
               <span class="slider round"></span>
             </label>
           </div>
           <div class="popup-item">
             <span>Weather</span>
             <label class="switch">
-              <input type="checkbox" aria-label="Toggle Weather">
+              <input type="checkbox" aria-label="Toggle Weather" />
               <span class="slider round"></span>
             </label>
           </div>

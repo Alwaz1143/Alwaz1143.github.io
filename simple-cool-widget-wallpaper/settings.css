@@ -2,17 +2,18 @@
   position: absolute;
   bottom: 2.5rem; /* above the gear icon */
   right: 0;
-  padding: 10px;
+  padding: 15px;
   backdrop-filter: blur(5px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   opacity: 0;
   transform: scale(0.95);
   transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
   z-index: 10;
+  min-width: 200px;
 }
 
 .settings-popup.show {
@@ -25,6 +26,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 4px 0;
+}
+
+.popup-item span {
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 /* Toggle switch */
@@ -34,7 +41,9 @@
   width: 34px;
   height: 18px;
 }
-
+.switch:hover{
+  cursor: pointer;
+}
 .switch input {
   opacity: 0;
   width: 0;
@@ -68,4 +77,13 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(16px);
+}
+
+.gear-icon {
+  transition: transform 0.3s ease;
+}
+
+.gear-icon.rotate {
+  transform: rotate(90deg);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
