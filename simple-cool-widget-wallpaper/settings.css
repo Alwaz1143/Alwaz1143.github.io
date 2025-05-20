@@ -87,3 +87,15 @@ input:checked + .slider:before {
   transform: rotate(90deg);
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+
+#change-background{
+  background-color: #2196F3;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  text-align: center;
+  cursor: pointer;
+}

@@ -88,4 +88,14 @@ function showImage() {
   weatherIcon.style.display = "block";
 }
 
-document.addEventListener("DOMContentLoaded", getWeather);
+// Initialize weather and set up auto-refresh
+function initializeWeather() {
+    // Initial weather fetch
+    getWeather();
+    
+    // Set up auto-refresh every 10 minutes (600000 milliseconds)
+    setInterval(getWeather, 600000);
+}
+
+// Replace the DOMContentLoaded event listener with the new initialization function
+document.addEventListener("DOMContentLoaded", initializeWeather);
