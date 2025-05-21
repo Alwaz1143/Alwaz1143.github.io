@@ -98,4 +98,34 @@ input:checked + .slider:before {
   padding: 0.1rem;
   text-align: center;
   cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+#bg-url-input{
+  outline: none;
+  border: none;
+  background: rgb(44, 44, 44);
+  margin: 0.5rem 0;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+
+.background-img-settings{
+  display: flex;
+  flex-direction: column;
+}
+
+#defaut-background{
+  background-color: #2196F3;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  text-align: center;
+  cursor: pointer;  
+  margin: 0.5rem 0;
+  padding: 0.5rem;
 }
