@@ -132,7 +132,6 @@ input:checked + .slider:before {
 
 .bg-file-btn {
   background-color: #2196F3;
-  color: white;
   width: 100%;
   outline: none;
   border: none;
