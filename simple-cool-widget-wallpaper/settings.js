@@ -105,7 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setBg();
 
   const changeBackground = document.querySelector("#change-background");
-  const defaultBackground = document.querySelector("#defaut-background");
+  const defaultBackground = document.querySelector("#default-background");
+
   const urlInput = document.querySelector("#bg-url-input");
   changeBackground.addEventListener("click", () => {
     const url = urlInput.value;
@@ -114,4 +115,20 @@ document.addEventListener("DOMContentLoaded", () => {
   defaultBackground.addEventListener("click", () => {
     setBg();
   });
+
+  const fileInput = document.querySelector("#bg-file-input");
+  if (fileInput) {
+    fileInput.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file && file.type.startsWith("image/")) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          setBg(e.target.result);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        console.log("please select a valid image file");
+      }
+    });
+  }
 });
