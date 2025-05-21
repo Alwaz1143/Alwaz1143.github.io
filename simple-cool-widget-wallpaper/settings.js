@@ -19,9 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (darkMode !== undefined) localStorage.setItem("darkMode", darkMode ? "1" : "0");
   }
   function loadPreferences() {
+    const darkModePref = localStorage.getItem("darkMode");
     return {
       bgUrl: localStorage.getItem("bgUrl"),
-      darkMode: localStorage.getItem("darkMode") === "1"
+      darkMode: darkModePref === null ? true : darkModePref === "1"
     };
   }
 
