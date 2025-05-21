@@ -55,10 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (gearIcon && popup) {
     gearIcon.addEventListener("click", () => {
       popup.classList.toggle("show");
+      gearIcon.classList.toggle("rotate");
     });
     document.addEventListener("click", (e) => {
       if (!document.querySelector(".settings").contains(e.target)) {
         popup.classList.remove("show");
+        gearIcon.classList.remove("rotate");
       }
     });
   }
