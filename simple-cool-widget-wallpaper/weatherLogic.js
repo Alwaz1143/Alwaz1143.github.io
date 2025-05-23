@@ -11,7 +11,6 @@ async function getWeather() {
       .then((data) => displayWeather(data))
       .catch((error) => {
         console.error("Error fetching current weather data", error);
-        alert("Error fetching current weather data, please try again later.");
       });
 
     fetch(forecastUrl)
@@ -19,11 +18,9 @@ async function getWeather() {
       .then((data) => displayHourlyForecast(data.list))
       .catch((error) => {
         console.error("Error fetching hourly forecast data", error);
-        alert("Error fetching hourly forecast data, please try again later.");
       });
   } catch (error) {
     console.error("Error fetching weather data:", error);
-    alert("Error fetching weather data. Please try again later.");
   }
 }
 
