@@ -11,9 +11,9 @@ window.addEventListener("unhandledrejection", function () {
   }, 1 * 60 * 1000);
 });
 
-import "./settings.js";
-import "./quotesLogic.js";
-import "./clockLogic.js";
-import "./calendarLogic.js";
-import "./weatherLogic.js";
-import "./date.js";
+import "./js/settings.js";
+import "./js/quotesLogic.js";
+import "./js/clockLogic.js";
+import "./js/calendarLogic.js";
+import "./js/weatherLogic.js";
+import "./js/date.js";
