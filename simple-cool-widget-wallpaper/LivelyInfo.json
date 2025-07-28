@@ -1,8 +1,8 @@
 {
   "AppVersion": "1.0.0.0",
   "Title": "Simple Cool Widget Wallpaper",
-  "Thumbnail": "thumbnail.png",
-  "Preview": "", 
+  "Thumbnail": "thumbnail.jpg",
+  "Preview": "preview.gif", 
   "Desc": "A customizable wallpaper with clock, calendar, weather, and quotes widgets.",
   "Author": "Alwaz",
   "License": "",
